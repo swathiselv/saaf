@@ -2,12 +2,12 @@ Detail = '<div class="row-fluid">' + '<div class="span12">' +
                     '<section class="utopia-widget">' +
                         '<div class="utopia-widget-title">' +
                             '<img src="img/icons/font.png" class="utopia-widget-icon">' +
-                            '<span>Description</span>' +
+                            '<span>Fix Details</span>' +
                         '</div>' +
 						'<div class="utopia-widget-content">' +
                             '<dl class="dl-horizontal">' +
                                 '<dt>Name</dt>' +
-                                '<dd>Spotfix name</dd>' +
+                                '<dd><a href="#">Spotfix name</a></dd>' +
                                 '<dt>Date</dt>' +
                                 '<dd>September 29th,2014</dd>' +
                                 '<dt>Description</dt>' +

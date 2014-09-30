@@ -1,5 +1,3 @@
-//var Markers = new Meteor.Collection("Markers");
-
 var i = 0;
 eventFunction = function(e) {
     Markers.insert({
