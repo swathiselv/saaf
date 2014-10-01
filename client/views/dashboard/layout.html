@@ -1,0 +1,105 @@
+<template name="layout">
+<div class="container-fluid">
+
+    <!-- Header starts -->
+    <div class="row-fluid">
+        <div class="span12">
+
+            <div class="header-top">
+
+                <div class="header-wrapper">
+
+                    <a href="#" class="utopia-logo"><img src="img/saaf.png" alt="SAAF"></a>
+
+                    <div class="header-right">
+
+                        <div class="header-divider">&nbsp;</div>
+
+                        <div class="search-panel header-divider">
+                            <div class="search-box">
+                                <img src="img/icons/zoom.png" alt="Search">
+                                <form action="" method="post">
+                                    <input type="text" name="search" placeholder="search"/>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="user-panel header-divider">
+                            <div class="user-info">
+                                <img src="img/icons/user.png" alt="">
+                                <a href="#">User</a>
+                            </div>
+
+                            <div class="user-dropbox">
+                                <ul>
+                                    <li class="user"><a href="">Profile</a></li>
+                                    <li class="settings"><a href="">Account Settings</a></li>
+                                    <li class="logout"><a href="index.html">Logout</a></li>
+                                </ul>
+                            </div>
+
+                        </div><!-- User panel end -->
+
+                    </div><!-- End header right -->
+
+                </div><!-- End header wrapper -->
+
+            </div><!-- End header -->
+
+        </div>
+
+    </div>
+
+    <!-- Header ends -->
+
+    <div class="row-fluid">
+
+        <!-- Sidebar statrt -->
+        <div class="span2 sidebar-container">
+
+            <div class="sidebar">
+
+                <div class="navbar sidebar-toggle">
+                    <div class="container">
+
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="nav-collapse collapse leftmenu">
+
+                    <ul>
+                        <li class="current"><a class="dashboard smronju" href="dashboard.html" title="Dashboard"><span>Dashboard</span></a></li>
+                        <li><a class="elements" href="maps.html" title="Maps"><span>Map</span></a></li>
+                        <li><a class="gallery" href="javascript:void(0)" title="Galleries"><span>Galleries</span></a></li>
+                        <li><a class="calendar" href="calendar.html" title="Calendar"><span>Calendar</span></a></li>
+                        <li><a class="chat" href="conversation.html" title="Conversation"><span>Conversation</span></a></li>
+                        <li><a class="error" href="error.html" title="Error Page"><span>Error Page</span></a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Sidebar end -->
+
+        <!-- Body start -->
+            <div class="span10 body-container">
+                    {{> yield}}
+                    {{> yield "chart"}}
+                    {{> yield "photos"}}
+
+        </div>
+        <!-- Body end -->
+
+    </div>
+
+    <!-- Maincontent end -->
+    </div> <!-- end of container -->
+</template>
