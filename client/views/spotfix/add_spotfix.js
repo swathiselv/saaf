@@ -26,5 +26,10 @@ Template.addSpotfix.rendered= function() {
         var volunteers = theTemplate.find('#volunteers').value;
 
         Meteor.call('addSpotFix', lat, lng, name, date, volunteers, email, description);
+        Router.go("dashboard");
+    },
+
+    'click button.cancel': function(theEvent, theTemplate) {
+            Router.go("dashboard");
     }
   });
