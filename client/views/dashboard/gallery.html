@@ -1,78 +1,136 @@
 <template name="gallery">
-	
-	<!-- image gallery  Starts-->
+<!--Full Fluid Gallery  Start -->
+    <div class="row-fluid">
+        <div class="span12">
+           <section class="utopia-widget">
 
-	<div class="row-fluid">
-	    <div class="span12">
-	            <section class="utopia-widget">
-	                <div class="utopia-widget-title">
-	                    <img src="img/icons/photo_album.png" class="utopia-widget-icon">
-	                    <span>image gallery</span>
-	                </div>
+              <div class="utopia-widget-title">
+                  <img src="img/icons/pictures_folder.png" class="utopia-widget-icon">
 
-	                <div class="utopia-widget-content">
-	                    <!-- modal-gallery is the modal dialog used for the image gallery -->
-	                    <div id="modal-gallery" class="modal modal-gallery hide fade">
-	                        <div class="modal-header">
-	                            <a class="close" data-dismiss="modal">&times;</a>
+                  <span>Spotfix hall of (sh)fame</span>
+              </div>
 
-	                            <h3 class="modal-title">Image Gallery</h3>
-	                        </div>
-	                        <div class="modal-body">
-	                            <div class="modal-image"></div>
-	                        </div>
-	                        <div class="modal-footer">
-	                            <a class="btn modal-download" target="_blank">
-	                                <i class="icon-download"></i>
-	                                <span>Download</span>
-	                            </a>
-	                            <a class="btn btn-success modal-play modal-slideshow" data-slideshow="5000">
-	                                <i class="icon-play icon-white"></i>
-	                                <span>Slideshow</span>
-	                            </a>
-	                            <a class="btn btn-info modal-prev">
-	                                <i class="icon-arrow-left icon-white"></i>
-	                                <span>Previous</span>
-	                            </a>
-	                            <a class="btn btn-primary modal-next">
-	                                <span>Next</span>
-	                                <i class="icon-arrow-right icon-white"></i>
-	                            </a>
-	                        </div>
-	                    </div>
 
-	                    <div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery">
-	                        <a href="img/fullsize/01.jpg" rel="gallery"><img src="img/thumbnails/100x67/01.jpg"></a>
-	                        <a href="img/fullsize/02.jpg" rel="gallery"><img src="img/thumbnails/100x67/02.jpg"></a>
-	                        <a href="img/fullsize/03.jpg" rel="gallery"><img src="img/thumbnails/100x67/03.jpg"></a>
-	                        <a href="img/fullsize/04.jpg" rel="gallery"><img src="img/thumbnails/100x67/04.jpg"></a>
-	                        <a href="img/fullsize/05.jpg" rel="gallery"><img src="img/thumbnails/100x67/05.jpg"></a>
-	                        <a href="img/fullsize/06.jpg" rel="gallery"><img src="img/thumbnails/100x67/06.jpg"></a>
-	                        <a href="img/fullsize/07.jpg" rel="gallery"><img src="img/thumbnails/100x67/07.jpg"></a>
-	                        <a href="img/fullsize/08.jpg" rel="gallery"><img src="img/thumbnails/100x67/08.jpg"></a>
-	                        <a href="img/fullsize/09.jpg" rel="gallery"><img src="img/thumbnails/100x67/09.jpg"></a>
-	                        <a href="img/fullsize/10.jpg" rel="gallery"><img src="img/thumbnails/100x67/10.jpg"></a>
-	                        <a href="img/fullsize/11.jpg" rel="gallery"><img src="img/thumbnails/100x67/11.jpg"></a>
-	                        <a href="img/fullsize/12.jpg" rel="gallery"><img src="img/thumbnails/100x67/12.jpg"></a>
-	                        <a href="img/fullsize/14.jpg" rel="gallery"><img src="img/thumbnails/100x67/14.jpg"></a>
-	                        <a href="img/fullsize/18.jpg" rel="gallery"><img src="img/thumbnails/100x67/18.jpg"></a>
-	                        <a href="img/fullsize/01.jpg" rel="gallery"><img src="img/thumbnails/100x67/01.jpg"></a>
-	                        <a href="img/fullsize/02.jpg" rel="gallery"><img src="img/thumbnails/100x67/02.jpg"></a>
-	                        <a href="img/fullsize/03.jpg" rel="gallery"><img src="img/thumbnails/100x67/03.jpg"></a>
-	                        <a href="img/fullsize/04.jpg" rel="gallery"><img src="img/thumbnails/100x67/04.jpg"></a>
-	                        <a href="img/fullsize/05.jpg" rel="gallery"><img src="img/thumbnails/100x67/05.jpg"></a>
-	                        <a href="img/fullsize/06.jpg" rel="gallery"><img src="img/thumbnails/100x67/06.jpg"></a>
-	                        <a href="img/fullsize/07.jpg" rel="gallery"><img src="img/thumbnails/100x67/07.jpg"></a>
-	                        <a href="img/fullsize/08.jpg" rel="gallery"><img src="img/thumbnails/100x67/08.jpg"></a>
-	                        <a href="img/fullsize/09.jpg" rel="gallery"><img src="img/thumbnails/100x67/09.jpg"></a>
-	                        <a href="img/fullsize/10.jpg" rel="gallery"><img src="img/thumbnails/100x67/10.jpg"></a>
-	                        <a href="img/fullsize/11.jpg" rel="gallery"><img src="img/thumbnails/100x67/11.jpg"></a>
-	                        <a href="img/fullsize/12.jpg" rel="gallery"><img src="img/thumbnails/100x67/12.jpg"></a>
-	                        <a href="img/fullsize/18.jpg" rel="gallery"><img src="img/thumbnails/100x67/18.jpg"></a>
-	                    </div>
-	                </div>
-	            </section>
-	     </div>
-	</div>
-	<!-- image gallery  ends-->
+              <div class="utopia-widget-content">
+                  <div id="utopia-woomark" role="main">
+
+                     <ul id="utopia-tiles">
+                        <!-- These are our grid blocks -->
+                        <li>
+                            <a class="utopia-colorbox1" href="img/fullsize/18.jpg" title="The title content here..">
+                                <img src="img/thumbnails/mix/18.jpg"></a>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </li>
+                        <li>
+                            <a class="utopia-colorbox1" href="img/fullsize/06.jpg" title="The title content here..">
+                                <img src="img/thumbnails/mix/06.jpg"></a>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </li>
+                        <li>
+                            <a class="utopia-colorbox1" href="img/fullsize/04.jpg" title="The title content here..">
+                                <img src="img/thumbnails/mix/04.jpg"></a>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </li>
+                        <li>
+                            <a class="utopia-colorbox1" href="img/fullsize/14.jpg" title="The title content here..">
+                                <img src="img/thumbnails/mix/14.jpg"></a>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </li>
+                        <li>
+                            <a class="utopia-colorbox1" href="img/fullsize/03.jpg" title="The title content here..">
+                                <img src="img/thumbnails/mix/03.jpg"></a>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </li>
+                        <li>
+                            <a class="utopia-colorbox1" href="img/fullsize/09.jpg" title="The title content here..">
+                                <img src="img/thumbnails/mix/09.jpg"></a>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </li>
+                        <li>
+                            <a class="utopia-colorbox1" href="img/fullsize/12.jpg" title="The title content here..">
+                                <img src="img/thumbnails/mix/12.jpg"></a>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </li>
+                        <li>
+                            <a class="utopia-colorbox1" href="img/fullsize/05.jpg" title="The title content here..">
+                                <img src="img/thumbnails/mix/05.jpg"></a>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </li>
+
+                        <li>
+                            <a class="utopia-colorbox1" href="img/fullsize/01.jpg" title="The title content here..">
+                                <img src="img/thumbnails/mix/01.jpg"></a>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </li>
+                        <li>
+                            <a class="utopia-colorbox1" href="img/fullsize/02.jpg" title="The title content here..">
+                                <img src="img/thumbnails/mix/02.jpg"></a>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </li>
+                        <li>
+                            <a class="utopia-colorbox1" href="img/fullsize/14.jpg" title="The title content here..">
+                                <img src="img/thumbnails/mix/14.jpg"></a>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </li>
+                        <li>
+                            <a class="utopia-colorbox1" href="img/fullsize/19.jpg" title="The title content here..">
+                                <img src="img/thumbnails/mix/19.jpg"></a>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </li>
+                         <li>
+                             <a class="utopia-colorbox1" href="img/fullsize/08.jpg" title="The title content here..">
+                                 <img src="img/thumbnails/mix/08.jpg"></a>
+
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                 incididunt ut labore et dolore magna aliqua.</p>
+                         </li>
+                         <li>
+                             <a class="utopia-colorbox1" href="img/fullsize/13.jpg" title="The title content here..">
+                                 <img src="img/thumbnails/mix/13.jpg"></a>
+
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                 incididunt ut labore et dolore magna aliqua.</p>
+                         </li>
+                         <li>
+                             <a class="utopia-colorbox1" href="img/fullsize/11.jpg" title="The title content here..">
+                                 <img src="img/thumbnails/mix/11.jpg"></a>
+
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                 incididunt ut labore et dolore magna aliqua.</p>
+                         </li>
+
+                        <!-- End of grid blocks -->
+                     </ul>
+                  </div>
+                  <div class="clearfix"></div>
+              </div>
+           </section>
+         </div>
+    </div>
+    <!--Full Fluid Gallery End-->
+
 </template>
