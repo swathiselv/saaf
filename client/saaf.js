@@ -1,16 +1,7 @@
-var i = 0;
-eventFunction = function(e) {
-    Markers.insert({
-        lat: e.latLng.lat(),
-        lng: e.latLng.lng(),
-        title: "new map: " + i++
-    });
-}
-
 Template.map.rendered = function() {
     if (! Session.get('map')) {
         gmaps.initialize();
-        gmaps.addClickListener(eventFunction);
+        gmaps.addClickListener();
      }
 
         Deps.autorun(function() {
@@ -26,3 +17,11 @@ Template.map.rendered = function() {
 Template.map.destroyed = function() {
     Session.set('map', false);
 }
+
+
+    getMarker = function(latitude, longitude) {
+        return Markers.findOne({
+            lat: latitude,
+            lng: longitude
+        });
+    }
